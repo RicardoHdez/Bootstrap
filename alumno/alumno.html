@@ -7,12 +7,15 @@
   <title>Ricardo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
   <!--<link rel="stylesheet" href="./css/style.css" >-->
-  <script src="./js/jquery3.1.1.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="../js/jquery3.1.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/sweetalert.min.js"></script>
+  <script src="../js/alert.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/sweetalert.css">  
 </head>
 <body>
 
@@ -28,17 +31,52 @@
       <span class="icon-bar"></span>
       </button>
         <!--<a class="navbar-brand" href="#">Instituto Tecnologico Gustavo A Madero</a>-->
-        <img src="./img/tec.png" class="img-thumbnail">
+        <img src="../img/tec.png" class="img-thumbnail">
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#" data-toggle="modal" data-target="#myModal">Iniciar sesion <span class="sr-only">(current)</span></a></li>
-        </ul>
-      </div>
     </div>
   </nav>
 
+<div class="masthead">
+  <nav>
+    <ul class="nav nav-justified">
+      <li class="active"><a href="#">Alumno</a></li>
+      <li><a href="./profesor.html">Profesor</a></li>
+      <li><a href="./materia.html">Materia</a></li>
+      <li><a href="./consultas.html">Consultas</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+  <!--Empieza modal de iniciar sesion-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+          <h4 class="modal-title" id="myModalLabel">Iniciar sesión</h4>
+        </div>
+        <div class="modal-body" style="background:url(./img/fondo.png)">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Numero de control</label>
+              <!--<span class="glyphicon glyphicon-knight" aria-hidden="true"></span>-->
+              <input type="text" class="form-control glyphicon-knight" aria-hidden="true" id="control" placeholder="Numero de control" autocomplete="off" pattern="(0-9).{9, }" title="Deben ser 9 numeros" maxlength="9" required/>
+              <i class="glyphicon glyphicon-knight form-control"></i>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div>
+            <button type="submit" class="btn btn-default">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="row">
         <div class="modal-header">
@@ -247,7 +285,7 @@
             <div class="form-inline">
               <div class="form-group">
                 <label for="exampleInputName2">Numero de control</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}" title="Deben ser 9 numeros">
+                <input class="form-control" id="disabledInput" type="text" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}" title="Deben ser 9 numeros" disabled>
               </div>
               <div class="form-group">
                 <label for="">Carrera</label>
@@ -423,11 +461,11 @@
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Numero de control">
       <span class="input-group-btn">
-        <button class="btn btn-primary glyphicon glyphicon-remove" type="button" data-toggle="modal" data-target="#actualizar"> Eliminar<span class="sr-only">(current)</span></button>
+        <button class="btn btn-primary glyphicon glyphicon-remove" type="button" onclick="eliminar()"> Eliminar</button>
       </span>
     </div><!-- /input-group -->
     <div class="alert alert-danger">
-          <strong>Precaucion!</strong>Una vez eliminado el alumno no se podra recuperar la informacion
+          <strong>Precaucion!</strong> Una vez eliminado el alumno, no se podra recuperar la informacion
       </div>
   </div><!-- /.col-lg-6 -->
 </div>
@@ -438,7 +476,7 @@
       <footer class="footer btn-info">
       <div class="container">
         <p class="text-muted" style="color: #000000; font-size: 20px; font-family: 'Times New Roman', Times, serif;">Programacion de Servicios Web</p>
-        <img src="./img/psw.png" alt="..." style="width:100px;">
+        <img src="../img/psw.png" alt="..." style="width:100px;">
       </div>
     </footer>
 
