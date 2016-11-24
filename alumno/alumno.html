@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Alumno</title>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Alumno</title>
+  <meta charset="UTF-8">
   <title>Ricardo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +16,12 @@
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/sweetalert.min.js"></script>
   <script src="../js/alert.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/sweetalert.css">  
+  <link rel="stylesheet" type="text/css" href="../css/sweetalert.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -37,20 +39,20 @@
     </div>
   </nav>
 
-<div class="masthead">
-  <nav>
-    <ul class="nav nav-justified">
-      <li class="active"><a href="#">Alumno</a></li>
-      <li><a href="./profesor.html">Profesor</a></li>
-      <li><a href="./materia.html">Materia</a></li>
-      <li><a href="./consultas.html">Consultas</a></li>
-    </ul>
-  </nav>
-</div>
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li class="active"><a href="#">Alumno</a></li>
+        <li><a href="./profesor.html">Profesor</a></li>
+        <li><a href="./materia.html">Materia</a></li>
+        <li><a href="./consultas.html">Consultas</a></li>
+      </ul>
+    </nav>
+  </div>
 
 
   <!--Empieza modal de iniciar sesion-->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -78,140 +80,140 @@
     </div>
   </div>
 
-<div class="row">
-        <div class="modal-header">
-            <p class="bg-primary" style="height: 50px;">Alta de alumno</p>
-        </div>
-        <div class="modal-body" style="background:#00BFFF; margin:10px auto;">
-          <form>
-            <div class="form-inline">
-              <div class="form-group">
-                <label for="exampleInputName2">Numero de control</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}" title="Deben ser 9 numeros">
-              </div>
-              <div class="form-group">
-                <label for="">Carrera</label>
-                <select name="TXT_Carrera" id="TXT_Carrera" class="form-control">
+  <div class="row">
+    <div class="modal-header">
+      <p class="bg-primary" style="height: 50px;">Alta de alumno</p>
+    </div>
+    <div class="modal-body" style="background:#00BFFF; margin:10px auto;">
+      <form>
+        <div class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Numero de control</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}" title="Deben ser 9 numeros">
+          </div>
+          <div class="form-group">
+            <label for="">Carrera</label>
+            <select name="TXT_Carrera" id="TXT_Carrera" class="form-control">
                   <option value="tics">Ing TIC'S</option> 
                   <option value="logistica">Ing Logistica</option> 
                   <option value="gestion">Ing Gestion</option>
                   <option value="ambiental">Ing Ambiental</option> 
                   <option value="industrial">Ing Industrial</option> 
                 </select>
-              </div>
-            </div>
-            <div class="modal-body">
-              <h4 class="modal-title" id="myModalLabel">Datos Personales</h4>
-            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <h4 class="modal-title" id="myModalLabel">Datos Personales</h4>
+        </div>
+        <div class="form-group">
+          <div class="form-horizontal">
             <div class="form-group">
-              <div class="form-horizontal">
-                <div class="form-group">
-                  <label for="exampleInputName2" class="col-sm-3 control-label">Nombre</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre(s)" autocomplete="off" >
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputName2" class="col-sm-3 control-label">Apellido Paterno</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Apellido Paterno" autocomplete="off">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputName2" class="col-sm-3 control-label">Apellido Materno</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Apellido Materno" autocomplete="off">
-                  </div>
-                </div>
+              <label for="exampleInputName2" class="col-sm-3 control-label">Nombre</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre(s)" autocomplete="off">
               </div>
             </div>
             <div class="form-group">
-              <div class="form-inline">
-                <div class="form-group">
-                  <label for="">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" id="">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputName2">Sexo</label>
-                  <div class="radio">
-                    <label>
+              <label for="exampleInputName2" class="col-sm-3 control-label">Apellido Paterno</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Apellido Paterno" autocomplete="off">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName2" class="col-sm-3 control-label">Apellido Materno</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Apellido Materno" autocomplete="off">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="">Fecha de nacimiento</label>
+              <input type="date" class="form-control" id="">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName2">Sexo</label>
+              <div class="radio">
+                <label>
                       <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                       <label for="exampleInputName2">Masculino</label>
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
                       <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                       <label for=exampleInputName2"">Femenino</label>
-                    </label>
-                  </div>
-                </div>
+                </label>
               </div>
             </div>
-            <div class="form-horizontal">
-              <div class="form-group">
-                <label for="exampleInputName2" class="col-sm-3 control-label">CURP</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="CURP" autocomplete="off">
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="exampleInputName2" class="col-sm-3 control-label">CURP</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="CURP" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="exampleInputName2">Tel Casa</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Tel Casa" autocomplete="off">
             </div>
             <div class="form-group">
-              <div class="form-inline">
-                <div class="form-group">
-                  <label for="exampleInputName2">Tel Casa</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Tel Casa" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputName2">Tel Celular</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Tel Celular" autocomplete="off">
-                </div>
-              </div>
+              <label for="exampleInputName2">Tel Celular</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Tel Celular" autocomplete="off">
             </div>
-            <div class="modal-body">
-              <h4 class="modal-title" id="myModalLabel">Domicilio</h4>
+          </div>
+        </div>
+        <div class="modal-body">
+          <h4 class="modal-title" id="myModalLabel">Domicilio</h4>
+        </div>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="exampleInputName2" class="col-sm-3 control-label">Calle</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre de calle" autocomplete="off">
             </div>
-            <div class="form-horizontal">
-              <div class="form-group">
-                <label for="exampleInputName2" class="col-sm-3 control-label">Calle</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre de calle" autocomplete="off">
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="exampleInputName2">Num ext</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero exterior" autocomplete="off">
             </div>
             <div class="form-group">
-              <div class="form-inline">
-                <div class="form-group">
-                  <label for="exampleInputName2">Num ext</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero exterior" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputName2">Num int</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero interior" autocomplete="off">
-                </div>
-              </div>
+              <label for="exampleInputName2">Num int</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero interior" autocomplete="off">
             </div>
-            <div class="form-horizontal">
-              <div class="form-group">
-                <label for="exampleInputName2" class="col-sm-3 control-label">Colonia</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Colonia" autocomplete="off">
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="exampleInputName2" class="col-sm-3 control-label">Colonia</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Colonia" autocomplete="off">
             </div>
-            <div class="form-horizontal">
-              <div class="form-group">
-                <label for="exampleInputName2" class="col-sm-3 control-label">Delegacion</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Delegacion" autocomplete="off">
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="exampleInputName2" class="col-sm-3 control-label">Delegacion</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Delegacion" autocomplete="off">
             </div>
-            <div class="form-horizontal">
-              <div class="form-group">
-                <label for="exampleInputName2" class="col-sm-3 control-label">Estado</label>
-                <div class="col-sm-8">
-                  <select name="TXT_Estadosa" id="TXT_Estados" class="form-control">
+          </div>
+        </div>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="exampleInputName2" class="col-sm-3 control-label">Estado</label>
+            <div class="col-sm-8">
+              <select name="TXT_Estadosa" id="TXT_Estados" class="form-control">
                     <option value="Aguascalientes">Aguascalientes</option>
                     <option value="Baja California ">Baja California </option>
                     <option value="Baja California Sur ">Baja California Sur </option>
@@ -245,32 +247,34 @@
                     <option value="Yucatán ">Yucatán </option>
                     <option value="Zacatecas">Zacatecas</option>
                   </select>
-                </div>
-              </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg active" style="">Registrar</button>
-            <button type="button" class="btn btn-default btn-lg active">Limpiar</button>
-          </form>
+          </div>
         </div>
-      <!--</div>
+        <button type="button" class="btn btn-primary btn-lg active" style="">Registrar</button>
+        <button type="reset" class="btn btn-default btn-lg active">Limpiar</button>
+      </form>
+    </div>
+    <!--</div>
     </div>-->
-  <!--</div>-->
-</div>
+    <!--</div>-->
+  </div>
 
 
-<p class="bg btn-success" style="height: 50px;">Actualizar informacion</p>
-<div class="row">
+  <p class="bg btn-success" style="height: 50px;">Actualizar informacion</p>
+  <div class="row">
     <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Numero de control">
-      <span class="input-group-btn">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Numero de control">
+        <span class="input-group-btn">
         <button class="btn btn-primary glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#actualizar"> Buscar<span class="sr-only">(current)</span></button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div>
+        </span>
+      </div>
+      <!-- /input-group -->
+    </div>
+    <!-- /.col-lg-6 -->
+  </div>
 
-<!-- Modal Actualizar-->
+  <!-- Modal Actualizar-->
   <div class="modal fade" id="actualizar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -285,7 +289,8 @@
             <div class="form-inline">
               <div class="form-group">
                 <label for="exampleInputName2">Numero de control</label>
-                <input class="form-control" id="disabledInput" type="text" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}" title="Deben ser 9 numeros" disabled>
+                <input class="form-control" id="disabledInput" type="text" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}"
+                  title="Deben ser 9 numeros" disabled>
               </div>
               <div class="form-group">
                 <label for="">Carrera</label>
@@ -306,7 +311,7 @@
                 <div class="form-group">
                   <label for="exampleInputName2" class="col-sm-3 control-label">Nombre</label>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre(s)" autocomplete="off" >
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre(s)" autocomplete="off">
                   </div>
                 </div>
                 <div class="form-group">
@@ -455,31 +460,34 @@
 
 
 
-<p class="bg btn-danger" style="height: 50px;">Elimando</p>
-<div class="row">
+  <p class="bg btn-danger" style="height: 50px;">Elimando</p>
+  <div class="row">
     <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Numero de control">
-      <span class="input-group-btn">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Numero de control">
+        <span class="input-group-btn">
         <button class="btn btn-primary glyphicon glyphicon-remove" type="button" onclick="eliminar()"> Eliminar</button>
       </span>
-    </div><!-- /input-group -->
-    <div class="alert alert-danger">
-          <strong>Precaucion!</strong> Una vez eliminado el alumno, no se podra recuperar la informacion
       </div>
-  </div><!-- /.col-lg-6 -->
-</div>
-
-
-
-    <!--<footer class="footer" style="background: #034CFF; margin:0 auto;">-->
-      <footer class="footer btn-info">
-      <div class="container">
-        <p class="text-muted" style="color: #000000; font-size: 20px; font-family: 'Times New Roman', Times, serif;">Programacion de Servicios Web</p>
-        <img src="../img/psw.png" alt="..." style="width:100px;">
+      <!-- /input-group -->
+      <div class="alert alert-danger">
+        <strong>Precaucion!</strong> Una vez eliminado el alumno, no se podra recuperar la informacion
       </div>
-    </footer>
+    </div>
+    <!-- /.col-lg-6 -->
+  </div>
+
+
+
+  <!--<footer class="footer" style="background: #034CFF; margin:0 auto;">-->
+  <footer class="footer btn-info">
+    <div class="container">
+      <p class="text-muted" style="color: #000000; font-size: 20px; font-family: 'Times New Roman', Times, serif;">Programacion de Servicios Web</p>
+      <img src="../img/psw.png" alt="..." style="width:100px;">
+    </div>
+  </footer>
 
 
 </body>
+
 </html>
