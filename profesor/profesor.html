@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Alumno</title>
+  <title>Profesor</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.css">
@@ -41,8 +41,8 @@
   <div class="masthead">
     <nav>
       <ul class="nav nav-justified">
-        <li class="active"><a href="../alumno/alumno.html">Alumno</a></li>
-        <li><a href="../profesor/profesor.html">Profesor</a></li>
+        <li><a href="../alumno/alumno.html">Alumno</a></li>
+        <li class="active"><a href="../profesor/profesor.html">Profesor</a></li>
         <li><a href="../materia/materia.html">Materia</a></li>
         <li><a href="../consultas/consultas.html">Consultas</a></li>
       </ul>
@@ -81,25 +81,17 @@
 <!--Alta de alumno-->
   <div class="row">
     <div class="modal-header">
-      <p class="bg-primary" style="height: 50px;">Alta de alumno</p>
+      <p class="bg-primary" style="height: 50px;">Alta de profesor</p>
     </div>
     <div class="modal-body" style="background:#00BFFF; margin:10px auto;">
       <form>
-        <div class="form-inline">
-          <div class="form-group">
-            <label for="exampleInputName2">Numero de control</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero de control" autocomplete="off" pattern="[1-9]{9}" title="Deben ser 9 numeros">
-          </div>
-          <div class="form-group">
-            <label for="">Carrera</label>
-            <select name="TXT_Carrera" id="TXT_Carrera" class="form-control">
-                  <option value="tics">Ing TIC'S</option> 
-                  <option value="logistica">Ing Logistica</option> 
-                  <option value="gestion">Ing Gestion</option>
-                  <option value="ambiental">Ing Ambiental</option> 
-                  <option value="industrial">Ing Industrial</option> 
-                </select>
-          </div>
+        <div class="form-horizontal">
+            <div class="form-group">
+              <label for="exampleInputName2" class="col-sm-3 control-label">Numero de trabajador</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Numero de trabajador" autocomplete="off">
+              </div>
+            </div>
         </div>
         <div class="modal-body">
           <h4 class="modal-title" id="myModalLabel">Datos Personales</h4>
@@ -149,14 +141,6 @@
             </div>
           </div>
         </div>
-        <div class="form-horizontal">
-          <div class="form-group">
-            <label for="exampleInputName2" class="col-sm-3 control-label">CURP</label>
-            <div class="col-sm-8">
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="CURP" autocomplete="off">
-            </div>
-          </div>
-        </div>
         <div class="form-group">
           <div class="form-inline">
             <div class="form-group">
@@ -166,6 +150,18 @@
             <div class="form-group">
               <label for="exampleInputName2">Tel Celular</label>
               <input type="text" class="form-control" id="exampleInputName2" placeholder="Tel Celular" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="exampleInputName2">CURP</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="CURP" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName2">RFC</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="RFC" autocomplete="off">
             </div>
           </div>
         </div>

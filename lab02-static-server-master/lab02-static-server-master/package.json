@@ -1,0 +1,33 @@
+{
+  "name": "lab02-static-server",
+  "version": "1.0.0",
+  "description": "Servidor  Web estatico en node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miriam-24/lab02-static-server.git"
+  },
+  "keywords": [
+    "node",
+    "static-server",
+    "web"
+  ],
+  "author": "miriiam@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miriam-24/lab02-static-server/issues"
+  },
+  "homepage": "https://github.com/miriam-24/lab02-static-server#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "mime": "^1.3.4",
+    "mongodb": "^2.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
